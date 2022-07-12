@@ -3,7 +3,9 @@
 const mongoose = require('mongoose');
 
 //* PROTECT GLOBAL VARIABLES
-require('dotenv').config()
+const dotenv = require('dotenv')
+dotenv.config({path : './config.env'})
+
 
 //MONGOOSE TALK TO MONGODB UTILIZING THE CONFIG FILE (GLOBAL VARIABLES)
 // ***! THESE CREDS WERE UNPROTECTED***//
